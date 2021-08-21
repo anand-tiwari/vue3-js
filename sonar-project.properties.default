@@ -1,0 +1,18 @@
+# Ref:- https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
+sonar.projectKey=com.gdn.pyeongyang-ui:search-ui
+sonar.projectName=com.gdn.pyeongyang-ui:search-ui
+sonar.projectVersion={{APP_VERSION}}
+
+sonar.sources=src
+sonar.sourceEncoding=UTF-8
+
+# Optional
+sonar.tests=tests
+
+sonar.exclusions=node_modules/**,target/**,build/**,config/**,dist/**,src/api-mock/**,src/third-party/**,static/**,test/**
+
+# Essential files excluded
+sonar.coverage.exclusions=src/api-mock/**,src/assets/**,src/config/**,src/i18n/**,src/utils/**,src/store/**
+
+# To import the LCOV report
+sonar.javascript.lcov.reportPaths=../tests/coverage/lcov.info

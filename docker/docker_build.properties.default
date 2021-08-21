@@ -1,0 +1,4 @@
+service-name=pyeongyang-search-ui
+service-type=ui
+service-version={{APP_VERSION}}
+target-folder-name=pyeongyang-search-ui-resources
